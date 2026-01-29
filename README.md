@@ -1,5 +1,7 @@
 # Wikipedia Fact-Checker
 
+[![Tests](https://github.com/pawankonwar/wikipedia-fact-checker/actions/workflows/test.yml/badge.svg)](https://github.com/pawankonwar/wikipedia-fact-checker/actions/workflows/test.yml)
+
 A Python AI agent that fact-checks claims using Wikipedia. Supports **keyword-based** (Phase 1) and **LLM-based** (Phase 2) analysis with configurable settings, export, and history.
 
 ---
