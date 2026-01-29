@@ -1,0 +1,20 @@
+# Project: Wikipedia Fact Checker
+# Phase 1 complete: Keyword-based Wikipedia API fact-checking
+# Phase 2 planned: LLM integration for semantic understanding
+
+## Current Structure:
+- `fact_checker.py`: Core logic
+- `app.py`: Streamlit web interface
+- `requirements.txt`: Dependencies
+
+## Project Goals:
+1. Improve Phase 1 code quality
+2. Design Phase 2 LLM integration
+3. Enhance documentation
+4. Add tests
+
+## Coding Standards:
+- Follow PEP 8 for Python
+- Use type hints where possible
+- Write docstrings for functions
+- Keep functions focused and modular

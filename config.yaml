@@ -1,0 +1,33 @@
+# Wikipedia Fact-Checker Configuration
+
+# Wikipedia API
+wikipedia:
+  base_url: "https://en.wikipedia.org/w/api.php"
+  timeout_seconds: 10
+  max_articles: 5
+  user_agent: "WikipediaFactChecker/1.0 (https://example.com; pawan@example.com)"
+
+# Fact-check behavior (keyword mode)
+fact_check:
+  max_evidence_sentences: 10
+  min_keyword_length: 3
+
+# Export
+export:
+  directory: "exports"
+  default_format: "json"  # json or csv
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Phase 2: Analyzer mode (keyword | llm)
+analyzer_mode: "keyword"
+
+# Phase 2: LLM (used when analyzer_mode is "llm")
+llm:
+  provider: "openai"  # openai | ollama
+  openai_model: "gpt-4o-mini"
+  ollama_model: "llama3.2"
+  confidence_enabled: true
